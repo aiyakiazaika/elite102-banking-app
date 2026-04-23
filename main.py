@@ -20,10 +20,10 @@ def user_menu(account_id):
             amount = float(input("Enter withdrawal amount: "))
             withdraw(account_id, amount)
         elif choice == "4":
-            print("Logged out.")
+            print("Logged out")
             break
         else:
-            print("Invalid choice.")
+            print("Invalid choice")
 
 def admin_menu():
     while True:
@@ -50,17 +50,17 @@ def admin_menu():
         elif choice == "4":
            list_accounts()
         elif choice == "5":
-            print("Logged out.")
+            print("Logged out")
             break
         else:
-            print("Invalid choice.")
+            print("Invalid choice")
 
 def main():
     load_dummy_data()
         
     while True:
         print("\n============================")
-        print("   Welcome to PyBank")
+        print("   Welcome to Aiya Bank")
         print("============================")
         print("1. Login as User")
         print("2. Login as Admin")
