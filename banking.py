@@ -143,7 +143,12 @@ def modify_account(account_id, name):
 
 # test
 if __name__ == "__main__":
-    create_account("Aiya", 500.00)
+    print("loading some tests...")
+    create_account("TestUser", 500.00, "0000")
+    print("PASS: create_account")
     deposit(1, 100.00)
+    print("PASS: deposit")
     withdraw(1, 200.00)
-
+    print("PASS: withdraw")
+    withdraw(1, 99999.00)  # should fail with insufficient funds
+    print("All tests complete.")
