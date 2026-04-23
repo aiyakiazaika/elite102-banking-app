@@ -141,7 +141,7 @@ def modify_account(account_id, name):
     
 
 
-# Quick test
+# test
 if __name__ == "__main__":
     create_account("Aiya", 500.00)
     deposit(1, 100.00)

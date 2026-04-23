@@ -73,11 +73,13 @@ def main():
             pin = input("Enter PIN: ")
             if login(account_id, pin):
                 user_menu(account_id)
+                continue
         elif choice == "2":
             pin = input("Enter admin PIN: ")
             if pin == ADMIN_PIN:
                 print("Welcome, Admin!")
                 admin_menu()
+                continue
             else:
                 print("Incorrect admin PIN")
         elif choice == "3":
