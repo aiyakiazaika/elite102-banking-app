@@ -79,12 +79,12 @@ def main():
                 print("Welcome, Admin!")
                 admin_menu()
             else:
-                print("Incorrect admin PIN.")
+                print("Incorrect admin PIN")
         elif choice == "3":
-            print("Goodbye.")
+            print("goodbye!")
             break
         else:
-            print("Invalid choice.")
+            print("invalid choice")
 
 if __name__ == "__main__":
     main()
